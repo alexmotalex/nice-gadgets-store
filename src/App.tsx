@@ -1,21 +1,17 @@
-import React from 'react';
-import './App.scss';
+import { Route, Routes } from 'react-router-dom';
+import { MainLayout } from './layouts/MainLayout';
+import { routesConfig } from './router/routesConfig';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
-
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
-
-export const App: React.FC = () => {
+export const App = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          {routesConfig.map(route => (
+            <Route key={route.path} path={route.path} element={route.element} />
+          ))}
+        </Route>
+      </Routes>
     </div>
   );
 };
