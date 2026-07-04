@@ -6,7 +6,7 @@ A responsive React + TypeScript storefront for mobile devices, tablets, and acce
 
 ## Demo
 
-- Live demo: [https://alexmotalex.github.io/nice-gadgets-store/](https://alexmotalex.github.io/nice-gadgets-store/)
+- [DEMO LINK](https://alexmotalex.github.io/nice-gadgets-store/)
 
 ## Features
 
