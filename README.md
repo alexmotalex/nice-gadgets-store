@@ -1,7 +1,5 @@
 # Nice Gadgets Store
 
-[DEMO LINK](https://alexmotalex.github.io/nice-gadgets-store/)
-
 A responsive React + TypeScript storefront for mobile devices, tablets, and accessories. This project includes product browsing, category filtering, search, cart management, and favorites.
 
 ## Demo
